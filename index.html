@@ -289,6 +289,24 @@
   <footer style="text-align: center; color: #999; padding: 16px; font-size: 0.8rem; background-color: #111;">
     <p>⚠️ This portfolio was created just for fun and practice. Some links may not work and the webpage is not mobile responsive.</p>
   </footer>
+<!-- Modal HTML -->
+<div id="popup-modal" style="display: flex; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.85); justify-content: center; align-items: center; z-index: 9999;">
+  <div style="background: #fff; color: #333; padding: 30px 20px; border-radius: 12px; max-width: 400px; text-align: center; box-shadow: 0 0 20px rgba(0,0,0,0.5); font-family: sans-serif;">
+    <h2 style="margin-bottom: 15px;">⚠️ Disclaimer</h2>
+    <p style="margin-bottom: 25px; line-height: 1.4;">
+      This portfolio is created just for fun and practice. Some hyperlinks may not work and the webpage is not responsive.
+    </p>
+    <button onclick="closePopup()" style="background: #007bff; color: white; border: none; padding: 10px 20px; margin-right: 10px; border-radius: 5px; cursor: pointer;">Continue</button>
+    <button onclick="window.location.href='https://google.com'" style="background: #ccc; color: black; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Leave</button>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  function closePopup() {
+    document.getElementById('popup-modal').style.display = 'none';
+  }
+</script>
 
 </body>
 </html>
