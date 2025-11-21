@@ -1,0 +1,231 @@
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+
+/* :root {
+    --bg-color: #0d0d0d;
+    --text-color: #e6e6e6;
+    --link-color: #e6e6e6;
+    --link-hover-bg: #e6e6e6;
+    --link-hover-text: #0d0d0d;
+    --border-color: #333;
+} */
+
+:root {
+    --bg-color: #ffffff;   /* white */
+    --text-color: #000000; /* black */
+    --link-color: #000000;
+    /* --link-hover-bg: #000000;
+    --link-hover-text: #ffffff; */
+    --border-color: #ccc;
+}
+
+/* 
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 40px;
+} */
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #ffffff;   /* PURE WHITE BACKGROUND */
+    color: #000000;              /* PURE BLACK TEXT */
+    margin: 0;
+    padding: 40px;
+}
+
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-bottom: 80px; /* space above footer */
+}
+
+/* headings */
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+/* underline highlight */
+.highlight {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+/* list style */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* links */
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+/* a:hover {
+    background-color: var(--link-hover-bg);
+    color: var(--link-hover-text);
+    transition: 0.2s;
+} */
+
+/* project & blog blocks */
+.project, .blog {
+    margin-bottom: 2rem;
+}
+
+.project h2, .blog h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.project p, .blog p {
+    margin-top: 0;
+    margin-left: 1rem;
+    line-height: 1.5;
+}
+
+/* footer (simple + minimal) */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;                 /* smaller height */
+    border-top: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;                    /* spacing between links */
+    font-size: 0.95rem;           /* smaller size to match page */
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
+/* 
+footer a:hover {
+    background-color: var(--link-hover-bg);
+    color: var(--link-hover-text);
+} */
+
+
+/* footer a:hover {
+    color: var(--link-hover-bg);
+    transform: scale(1.2);
+} */
+
+
+
+/* General paragraph spacing */
+p {
+    line-height: 1.7;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Add space between list items */
+ul li {
+    margin-bottom: 0.8rem;
+}
+
+/* Optional: add more space before/after each section heading */
+h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* For project and blog sections */
+.project, .blog {
+    margin-bottom: 2.5rem;
+}
+
+.project p, .blog p {
+    margin-top: 0.4rem;
+    margin-left: 1rem;
+    line-height: 1.6;
+}
+
+.container h2:first-of-type {
+    margin-top: 3rem;
+}
+
+
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    /* font-family: 'Roboto Slab', serif; */
+    /* font-family: 'Bitter', serif; */
+    /* font-family: 'Rokkitt', serif; */
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+    margin: 0;
+    padding: 40px;
+
+    /* dark overlay for readability */
+    position: relative;
+}
+
+
+
+/* 
+body {
+    background: url("bg.png") repeat;
+    background-size: auto;
+    color: var(--text-color);
+} */
+
+/* body {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+} */
+
+footer img.icon {
+    width: 22px;
+    height: 22px;
+    filter: invert(100%); /* keeps it white in dark mode */
+    transition: 0.3s ease;
+}
+
+.container {
+    padding-top: 5px; /* adjust depending on your h1 height */
+}
+
+/* Background clock styling */
+#background-time {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10vw; /* scales with screen size */
+    color: rgba(255, 255, 255, 0.05); /* subtle transparency */
+    user-select: none;
+    z-index: 0; /* stays behind everything */
+    pointer-events: none;
+}
+
+/* Ensure content appears above it */
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
